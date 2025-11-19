@@ -2,15 +2,19 @@
 <html>
 <head>
     <title>Estate Management Data Loader</title>
-    <link rel="stylsheet" href="AppCode.css>"
+    <link rel="stylsheet" href="AppCode.css">
 </head>
 <body>
     <h2>Upload Estates Questionnaire PDF</h2>
-    <form id="uploadForm" enctype="multipart/form-data">
-        <input type="file" name="pdfFile" accept="application/pdf" />
-        <button type="submit">Upload & Insert Data</button>
+    <div class="card">
+            <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="pdfFile" accept="application/pdf" />
+            <button type="submit">Upload & Insert Data</button>
     </form>
-    <div id="result"></div>
+    <div id="result"></div>        
+
+    </div>
+    
 
     <script>
         document.getElementById('uploadForm').addEventListener('submit', async (e) => {
@@ -24,5 +28,6 @@
             document.getElementById('result').innerText = JSON.stringify(result, null, 2);
         });
     </script>
+    <Script src="AppCode.js"></Script>
 </body>
 </html>

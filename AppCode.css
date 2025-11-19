@@ -1,15 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
+    background-color: #7df2b2;
     margin: 0;
-    padding: 0;
-    display: flex;
+    padding:  0;
+    display: flex; 
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
 h2 {
+    align-items: center;
     text-align: center;
     color: #333;
     margin-bottom: 20px;
@@ -57,4 +58,11 @@ button:hover {
     font-size: 14px;
     color: #155724;
     white-space: pre-wrap;
+}
+
+.card{
+    background-color: #7df2b2;
+    align-items: middle;
+    height: 50px;
+    width: auto;
 }
