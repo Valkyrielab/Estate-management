@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estate Management Data Loader</title>
+</head>
+<body>
+    <h2>Upload Estates Questionnaire PDF</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="pdfFile" accept="application/pdf" />
+        <button type="submit">Upload & Insert Data</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            });
+            const result = await response.json();
+            document.getElementById('result').innerText = JSON.stringify(result, null, 2);
+        });
+    </script>
+</body>
+</html>
