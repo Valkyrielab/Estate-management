@@ -1,0 +1,92 @@
+let counter = 1;
+
+function addExecutor() {
+  counter++;
+
+  // Get the first executor group
+  const originalGroup = document.querySelector('.bankAccounts-group');
+
+  // Clone it
+  const newGroup = originalGroup.cloneNode(true);
+
+  
+// Update IDs and labels for accessibility
+  newGroup.querySelectorAll('input').forEach((input, index) => {
+    const newId = input.name.replace('[]', '') + counter;
+    input.id = newId;
+    input.value = ''; // Clear previous values
+    input.placeholder = '';
+  });
+
+  newGroup.querySelectorAll('label').forEach((label, index) => {
+    const input = newGroup.querySelectorAll('input')[index];
+    label.setAttribute('for', input.id);
+  });
+
+  
+ // Insert before the button
+  const form = document.getElementById('bankAccounts');
+  form.insertBefore(newGroup, form.querySelector('button'));
+}
+
+let counter = 1;
+
+function addExecutor() {
+  counter++;
+
+  // Get the first executor group
+  const originalGroup = document.querySelector('.Insurance Policies-group');
+
+  // Clone it
+  const newGroup = originalGroup.cloneNode(true);
+
+  
+// Update IDs and labels for accessibility
+  newGroup.querySelectorAll('input').forEach((input, index) => {
+    const newId = input.name.replace('[]', '') + counter;
+    input.id = newId;
+    input.value = ''; // Clear previous values
+    input.placeholder = '';
+  });
+
+  newGroup.querySelectorAll('label').forEach((label, index) => {
+    const input = newGroup.querySelectorAll('input')[index];
+    label.setAttribute('for', input.id);
+  });
+
+  
+ // Insert before the button
+  const form = document.getElementById('Insurance Policies');
+  form.insertBefore(newGroup, form.querySelector('button'));
+}
+
+let counter = 1;
+
+function addExecutor() {
+  counter++;
+
+  // Get the first executor group
+  const originalGroup = document.querySelector('.Unit Trust');
+
+  // Clone it
+  const newGroup = originalGroup.cloneNode(true);
+
+  
+// Update IDs and labels for accessibility
+  newGroup.querySelectorAll('input').forEach((input, index) => {
+    const newId = input.name.replace('[]', '') + counter;
+    input.id = newId;
+    input.value = ''; // Clear previous values
+    input.placeholder = '';
+  });
+
+  newGroup.querySelectorAll('label').forEach((label, index) => {
+    const input = newGroup.querySelectorAll('input')[index];
+    label.setAttribute('for', input.id);
+  });
+
+  
+ // Insert before the button
+  const form = document.getElementById('Unit Trust');
+  form.insertBefore(newGroup, form.querySelector('button'));
+}
