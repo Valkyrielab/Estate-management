@@ -296,12 +296,19 @@
                                 <label for="No">No</label></td>
                         </tr>
                         <tr>
-                            <td><label for="deceased">Copy of divorce order;</label></td>
-                            <td>  <input type="file" id="file1" name="executorFile[]" accept=".pdf,.jpg,.png,.doc,.docx">  </td>
+                            <td><label for="doc">Doctor’s name and address</label></td>
+                            <td>  <label for="doc">Full Name</label>  </td>
+                            <td> <input type="text" name="doc"></td>
+                            <td>  <label for="doc">Address</label>  </td>
+                            <td> <input type="text" name="doc"></td>
                         </tr>
                         <tr>
-                            <td><label for="deceased">Copy of divorce order and settlement agreement;</label></td>
-                            <td> <input type="file" id="file1" name="executorFile[]" accept=".pdf,.jpg,.png,.doc,.docx">   </td>
+                            <td><label for="cause">Cause of death?</label></td>
+                            <td> <input type="text" name="cause">   </td>
+                        </tr>
+                        <tr>
+                             <td><label for="fp">Funeral policies?</label></td>
+                            <td> <input type="text" name="fp">   </td>
                         </tr>
                     </Table>
                 </form> 
