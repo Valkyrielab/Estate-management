@@ -14,8 +14,117 @@
         </header>
         <main class="Center">
             <form class="individuals info." >
-                <label> Contact Person: </label> 
+                <h3>Individuals Details</h3>
+                <label for="contact person"> Contact Person: </label> 
                 <input type="text" name="contact person">
+                <label for="cont no.">Contact Number</label>
+                <input type="number" name="cont no.">
+                <label for="email"> E-mail Address</label>
+                <input type="text" name="email"><br>
+                <label for="full name"> Deceased Full Name and Surname</label> 
+                <input type="text" name="full name">
+                <br>
+                <label for="userId">Identity Number:</label>
+                <input type="text" id="userId" name="userId">
+                <label for="nationality">Nationality</label>
+                <input type="text" name="nationality">
+                <label for="tax num">Tax Number</label>
+                <input type="number" name="tax num">
+                <br>
+                <label for="consalt">Tax consutants and contact Details</label>
+                <input type="text" name="consult">
+                <label for="will">is there a Will ?</label>
+                <select id="agree" name="agree">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <label for="date signed">Date and place the Will was signed. </label><br>
+                <label for="ds">Date the will was signed:</label>
+                <input type="date" id="ds" name="ds" min="1900-01-01" max="2025-12-31">
+                <label for="place">Place the Will was signed:</label>
+                <select id="place" name="place">
+                    <option value="Select">Please select a Value</option>
+                    <option value="Office">Legacy Office</option>
+                    <option value="home">Clientes Home </option>
+                    <option value="Office">Other Firm</option>
+                </select>
+                 <select id="provinces" name="provinces">
+                    <option value="Select">Please select a provinces</option>
+                    <option value="Eastern Cape">Eastern Cape</option>
+                    <option value="Free State">Free State</option>
+                    <option value="Gauteng">Gauteng</option>
+                    <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                    <option value="Limpopo">Limpopo</option>
+                    <option value="Mpumalanga">Mpumalanga</option>
+                    <option value="Northern Cape">Other Firm</option>
+                    <option value="North West">North West</option>
+                    <option value="Western Cape">Western Cape</option>
+                </select>
+                <label for="residence "> Residence Prior to death:</label><br>
+                <label for="address">Address:</label>
+                <input type="text"  name="address">
+                <select id="address" name="address">
+                    <option value="Select">Please select a provinces</option>
+                    <option value="Eastern Cape">Eastern Cape</option>
+                    <option value="Free State">Free State</option>
+                    <option value="Gauteng">Gauteng</option>
+                    <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                    <option value="Limpopo">Limpopo</option>
+                    <option value="Mpumalanga">Mpumalanga</option>
+                    <option value="Northern Cape">Other Firm</option>
+                    <option value="North West">North West</option>
+                    <option value="Western Cape">Western Cape</option>
+                </select>
+                <label for="salary">Approximate monthly salary: R </label>
+                <input type="number" name="salary">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31">
+                <label for="pob">Place of birth</label>
+                <input type="location" name="pob">
+                <label for="dod"> Date of death</label>
+                <input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31">
+                <input type="location" name="pob">
+                <label for="married">Marital Status at time of death:</label>
+                <input type="radio" id="yes" name="agree" value="Yes">
+                <label for="yes">Yes</label>
+  
+                <input type="radio" id="no" name="agree" value="No">
+                <label for="no">No</label>
+                <label for="married">Place where married:</label>
+                <input type="location" name="married">
+                <label for="married">Married in or out of community of property:</label><br>
+                <input type="radio" id="yes" name="inside" value="Yes">
+                <label for="inside">inside</label>
+  
+                <input type="radio" id="no" name="outside" value="No">
+                <label for="outside">Outside</label>
+                <br>
+                <label for="spouse">Full Names of Surviving Spouse and Occupation:</label>
+                <label for="spouse">Spouses full Name</label>
+                <input type="text" name="spouse">
+                <label for="spouse">Spouses Occupation</label>
+                <input type="text" name="spouse">
+                <label for="spouse">Address and telephone number of surviving spouse:</label><br>
+                <label for="spouse">Spouses telephone Number</label>
+                <input type="text" name="spouse">
+                <label for="spouse">Spouses Address: </label>
+                <input type="text" name="spouse">
+                <br><br>
+                <label for="Hiers">Heirs as per Will:</label>
+                <label for="item 1">Full Name</label>
+                <input type="text" name="item[1]" placeholder=" ">
+                <label for="item 2">Identity Number:</label>
+                <input type="text" name="item[2]" placeholder=" "><br>
+                <label for="item 3">Address:</label>
+                <input type="text" name="item[3]" placeholder=" "><br>
+                <label for="item 4">Email Address:</label>
+                <input type="text" name="item[4]" placeholder=" ">
+                <label for="item 5">Contact Number:</label>
+                <input type="text" name="item[5]" placeholder=" "><br>
+
+                
+                <br><br>
+                <button type="button" onclick="addField()">Add More</button>
 
             </form>   
 
