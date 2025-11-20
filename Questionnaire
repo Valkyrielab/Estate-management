@@ -95,6 +95,7 @@
                 <label for="married">Married in or out of community of property:</label><br>
                 <input type="radio" id="yes" name="inside" value="Yes">
                 <label for="inside">inside</label>
+
   
                 <input type="radio" id="no" name="outside" value="No">
                 <label for="outside">Outside</label>
@@ -110,6 +111,9 @@
                 <label for="spouse">Spouses Address: </label>
                 <input type="text" name="spouse">
                 <br><br>
+            </form>
+
+            <form class="Hiers">
                 <label for="Hiers"><h3>Heirs as per Will:</h3>
                 <label for="item 1">Full Name</label>
                 <input type="text" name="item[1]" placeholder=" ">
@@ -121,13 +125,186 @@
                 <input type="text" name="item[4]" placeholder=" ">
                 <label for="item 5">Contact Number:</label>
                 <input type="text" name="item[5]" placeholder=" "><br>
-                </label>
-                
                 <br><br>
                 <button type="button" onclick="addField()">Add More</button>
+                </label>
+            </form>
 
-            </form>   
+            <form class="Executors">
+                <label for="Executors"><h3>Nominated Executor(s) as per Will:</h3></label>
+                <label for="item 1">Full Name</label>
+                <input type="text" name="item[1]" placeholder=" ">
+                <label for="item 2">Identity Number:</label>
+                <input type="text" name="item[2]" placeholder=" "><br>
+                <label for="item 3">Address of nominate Executor:</label>
+                <input type="text" name="item[3]" placeholder=" "><br>
+                <label for="item 4">Email Address:</label>
+                <input type="text" name="item[4]" placeholder=" ">
+                <label for="item 5">Contact Number:</label>
+                <input type="text" name="item[5]" placeholder=" "><br>
+                <br><br>
+                <button type="button" onclick="addField()">Add More</button>
+                
 
+                </form>   
+                <form>
+                    <Table>
+                        <tr>
+                            <td><label for="deceased">Name of predeceased spouse, if any;</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Name of predeceased spouse, if any;</label></td>
+                            <td><input type="Date" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Master’s Reference and office at which it was reported; OR</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Name of previous spouse;</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Date of divorce;</label></td>
+                            <td><input type="date" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Copy of divorce order;</label></td>
+                            <td>  <input type="file" id="file1" name="executorFile[]" accept=".pdf,.jpg,.png,.doc,.docx">  </td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Copy of divorce order and settlement agreement;</label></td>
+                            <td> <input type="file" id="file1" name="executorFile[]" accept=".pdf,.jpg,.png,.doc,.docx">   </td>
+                        </tr>
+                    </Table>
+                </form>
+                <form class="children">
+                    <label for="children">Children of deceased</label>
+                    <Table>
+                       <tr>
+                         <th>Full Name:</th>
+                         <th>Age:</th>
+                         <th>Date of Birth</th>
+                         <th>Identity Number:</th>
+                         <th>Contact Number</th>
+                       </tr>
+                       <tr>
+                        <td>
+                            <input type="Text" name ="Full Name">
+                        </td>
+                        <td>
+                            <input type="number" name ="age">
+                        </td>
+                        <td>
+                            <input type="Date" name ="dob">
+                        </td>
+                        <td>
+                            <input type="number" name ="id">
+                        </td>
+                        <td>
+                            <input type="number" name ="number">
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <input type="Text" name ="Full Name">
+                        </td>
+                        <td>
+                            <input type="number" name ="age">
+                        </td>
+                        <td>
+                            <input type="Date" name ="dob">
+                        </td>
+                        <td>
+                            <input type="number" name ="id">
+                        </td>
+                        <td>
+                            <input type="number" name ="number">
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <input type="Text" name ="Full Name">
+                        </td>
+                        <td>
+                            <input type="number" name ="age">
+                        </td>
+                        <td>
+                            <input type="Date" name ="dob">
+                        </td>
+                        <td>
+                            <input type="number" name ="id">
+                        </td>
+                        <td>
+                            <input type="number" name ="number">
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <input type="Text" name ="Full Name">
+                        </td>
+                        <td>
+                            <input type="number" name ="age">
+                        </td>
+                        <td>
+                            <input type="Date" name ="dob">
+                        </td>
+                        <td>
+                            <input type="number" name ="id">
+                        </td>
+                        <td>
+                            <input type="number" name ="number">
+                        </td>
+                       </tr>
+                    </Table>
+                    <Table>
+                        <tr>
+                            <td><label for="deceased">Names of parents of the deceased, and state whether they are alive or deceased</label></td>
+                            <td><input type="radio" id="alive" name="agree" value="Alive">
+                                <label for="Alive">Alive</label>
+                                <input type="radio" id="deceased" name="agree" value="deceased">
+                                <label for="deceased">Deceased</label>
+                            </td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Name and address of person signing all the forms, especially the Death Notice</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Master’s Reference and office at which it was reported; OR</label></td>
+                            <td><label for="sign">Full name</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                            <td><label for="sign">Address</label></td>
+                            <td><input type="location" name="deceased" placeholder=" "></td>
+
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Was the above present at the time of death?</label></td>
+                            <td><input type="radio" id="yes" name="agree" value="yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="No" name="agree" value="No">
+                                <label for="No">No</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Is there a death certificate?</label></td>
+                            <td><input type="radio" id="yes" name="agree" value="yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="No" name="agree" value="No">
+                                <label for="No">No</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Copy of divorce order;</label></td>
+                            <td>  <input type="file" id="file1" name="executorFile[]" accept=".pdf,.jpg,.png,.doc,.docx">  </td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Copy of divorce order and settlement agreement;</label></td>
+                            <td> <input type="file" id="file1" name="executorFile[]" accept=".pdf,.jpg,.png,.doc,.docx">   </td>
+                        </tr>
+                    </Table>
+                </form> 
 
         </main>
     </body>

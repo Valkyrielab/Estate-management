@@ -1,43 +1,64 @@
 
-function addField() {
-  // Create a new input element
-  const newLabel = document.createElement('labal');
-  newLabel.for = 'item 1' ;
-  const newInput = document.createElement('input');
-  newInput.type = 'text';
-  newInput.name = 'item[1]';
-  newInput.placeholder = ' ';
-  const newLabel = document.createElement('labal');
-  newLabel.for = 'item 2' ;
-  const newInput = document.createElement('input');
-  newInput.type = 'text';
-  newInput.name = 'item[2]';
-  newInput.placeholder = ' ';
-  const newLabel = document.createElement('labal');
-  newLabel.for = 'item 3' ;
-  const newInput = document.createElement('input');
-  newInput.type = 'text';
-  newInput.name = 'item[3]';
-  newInput.placeholder = ' ';
-  const newLabel = document.createElement('labal');
-  newLabel.for = 'item 4' ;
-  const newInput = document.createElement('input');
-  newInput.type = 'text';
-  newInput.name = 'item[4]';
-  newInput.placeholder = ' ';
-  const newLabel = document.createElement('labal');
-  newLabel.for = 'item 5' ;
-  const newInput = document.createElement('input');
-  newInput.type = 'text';
-  newInput.name = 'item[5]';
-  newInput.placeholder = ' ';
+let counter = 1;
+
+function addHiers() {
+  counter++;
+
+  // Get the first executor group
+  const originalGroup = document.querySelector('.Hiers-group');
+
+  // Clone it
+  const newGroup = originalGroup.cloneNode(true);
 
   
-  // Add a line break for spacing
-  const br = document.createElement('br');
+// Update IDs and labels for accessibility
+  newGroup.querySelectorAll('input').forEach((input, index) => {
+    const newId = input.name.replace('[]', '') + counter;
+    input.id = newId;
+    input.value = ''; // Clear previous values
+    input.placeholder = '';
+  });
+
+  newGroup.querySelectorAll('label').forEach((label, index) => {
+    const input = newGroup.querySelectorAll('input')[index];
+    label.setAttribute('for', input.id);
+  });
+
   
-  // Append to the form
-  const form = document.getElementById('hr');
-  form.insertBefore(br, form.querySelector('button'));
-  form.insertBefore(newInput, form.querySelector('button'));
+ // Insert before the button
+  const form = document.getElementById('Hiers');
+  form.insertBefore(newGroup, form.querySelector('button'));
+}
+
+
+
+let counter = 1;
+
+function addExecutor() {
+  counter++;
+
+  // Get the first executor group
+  const originalGroup = document.querySelector('.executor-group');
+
+  // Clone it
+  const newGroup = originalGroup.cloneNode(true);
+
+  
+// Update IDs and labels for accessibility
+  newGroup.querySelectorAll('input').forEach((input, index) => {
+    const newId = input.name.replace('[]', '') + counter;
+    input.id = newId;
+    input.value = ''; // Clear previous values
+    input.placeholder = '';
+  });
+
+  newGroup.querySelectorAll('label').forEach((label, index) => {
+    const input = newGroup.querySelectorAll('input')[index];
+    label.setAttribute('for', input.id);
+  });
+
+  
+ // Insert before the button
+  const form = document.getElementById('Executors');
+  form.insertBefore(newGroup, form.querySelector('button'));
 }
