@@ -99,7 +99,7 @@
                 <input type="radio" id="no" name="outside" value="No">
                 <label for="outside">Outside</label>
                 <br>
-                <label for="spouse">Full Names of Surviving Spouse and Occupation:</label>
+                <label for="spouse" id="heirs">Full Names of Surviving Spouse and Occupation:</label>
                 <label for="spouse">Spouses full Name</label>
                 <input type="text" name="spouse">
                 <label for="spouse">Spouses Occupation</label>
@@ -110,7 +110,7 @@
                 <label for="spouse">Spouses Address: </label>
                 <input type="text" name="spouse">
                 <br><br>
-                <label for="Hiers">Heirs as per Will:</label>
+                <label for="Hiers"><h3>Heirs as per Will:</h3>
                 <label for="item 1">Full Name</label>
                 <input type="text" name="item[1]" placeholder=" ">
                 <label for="item 2">Identity Number:</label>
@@ -121,7 +121,7 @@
                 <input type="text" name="item[4]" placeholder=" ">
                 <label for="item 5">Contact Number:</label>
                 <input type="text" name="item[5]" placeholder=" "><br>
-
+                </label>
                 
                 <br><br>
                 <button type="button" onclick="addField()">Add More</button>

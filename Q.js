@@ -37,7 +37,7 @@ function addField() {
   const br = document.createElement('br');
   
   // Append to the form
-  const form = document.getElementById('myForm');
+  const form = document.getElementById('hr');
   form.insertBefore(br, form.querySelector('button'));
   form.insertBefore(newInput, form.querySelector('button'));
 }
