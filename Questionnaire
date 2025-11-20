@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Questionnaire</Title>
+        <link rel='stylesheet' href="Q.css">
+
+    </head>
+    <body>
+        <header>
+            <img src="image/logo.png" alt="Legacy Fiduciary Services">
+            <h1>Legacy</h1>
+            <hr>
+            <p>Fiduciary Services</p>
+        </header>
+        <main class="Center">
+            <form class="individuals info." >
+                <label> Contact Person: </label> 
+                <input type="text" name="contact person">
+
+            </form>   
+
+
+        </main>
+    </body>
+</html>
