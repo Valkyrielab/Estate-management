@@ -90,3 +90,9 @@ function addExecutor() {
   const form = document.getElementById('Unit Trust');
   form.insertBefore(newGroup, form.querySelector('button'));
 }
+
+
+
+function toggleExecutor(show) {
+  document.getElementById('executorFields').style.display = show ? 'block' : 'none';
+}

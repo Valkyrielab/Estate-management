@@ -3,8 +3,16 @@
     <head>
         <title>Assets</title>
         <script src="assets.js"></script>
+        <link href="assets.css">
     </head>
     <body>
+        <header>
+             <header>
+            <img src="image/logo.png" alt="Legacy Fiduciary Services">
+            <h1>Legacy</h1>
+            <hr>
+            <p>Fiduciary Services</p>
+        </header>
         <h1>ASSETS</h1>
         <form class="bankAccounts">
                 <label for="Executors"><h3>Bank accounts</h3></label>
@@ -20,6 +28,8 @@
                 <input type="numbers" name="item[5]" placeholder=" "><br>
                 <br><br>
                 <button type="button" onclick="addField()">Add More</button>
+
+                <input type="submit" value="Submit">
                 </form>  
 
              <form class="Insurance Policies">
@@ -35,6 +45,8 @@
             
                 <br><br>
                 <button type="button" onclick="addField()">Add More</button>
+
+                <input type="submit" value="Submit">
             </form>  
 
             <form class="Any Shares?">
@@ -52,6 +64,8 @@
 
                 <br><br>
                 <button type="button" onclick="addField()">Add More</button>
+
+                <input type="submit" value="Submit">
             </form>
             <form class="Unit Trust">
                 <label for="Unit Trust"><h3>Insurance Policies</h3></label>
@@ -79,6 +93,8 @@
                         <td><input type="text" name="address"></td>
                     </tr>
                 </table>
+
+                <input type="submit" value="Submit">
             </form>
             <form class="mediAid">
                 <h3>Medical Aid Scheme?</h3>
@@ -97,7 +113,9 @@
                     <tr>
                         <td><input type="loction"></td>
                     </tr>
-                </table>  
+                </table> 
+                
+                <input type="submit" value="Submit">
             </form>
             <form class="Property">
                 <table>
@@ -129,7 +147,83 @@
                         <td><input type="text " name="property"></td>
                     </tr>
                 </table>
+
+                <input type="submit" value="Submit">
             </form>  
+            <form class="motors">
+                <table>
+                    <tr>
+                        <thead>
+                            Motor Vehicle
+                        </thead>
+                    </tr>
+                    <tr>
+                        <th><label for="make">Make</label></th>
+                        <th><label for="model">Model</label></th>
+                        <th><label for="reg">Registration Number:</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="make" ></td>
+                        <td><input type="text" name="model" ></td>
+                        <td><input type="text" name="reg" ></td>
+                    </tr>
+                     <tr>
+                        <td><input type="text" name="make" ></td>
+                        <td><input type="text" name="model" ></td>
+                        <td><input type="text" name="reg" ></td>
+                    </tr>
+                     <tr>
+                        <td><input type="text" name="make" ></td>
+                        <td><input type="text" name="model" ></td>
+                        <td><input type="text" name="reg" ></td>
+                    </tr>
+                     <tr>
+                        <td><input type="text" name="make" ></td>
+                        <td><input type="text" name="model" ></td>
+                        <td><input type="text" name="reg" ></td>
+                    </tr> 
+                    <tr>
+                        <td><input type="text" name="make" ></td>
+                        <td><input type="text" name="model" ></td>
+                        <td><input type="text" name="reg" ></td>
+                    </tr>
+                </table>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <Form class="Business Interest">
+                <h3>Did the deceased have any Business Interest?</h3> 
+
+                <input type="radio" id="yes" name="addExecutor" value="Yes" onclick="toggleExecutor(true)">
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="busIn" value="No" onclick="toggleIdField(false)">
+                <label for="no">No</label>
+                
+                <!--hidden section-->
+                <div id="executorFields" style="display:none; border:1px solid #ccc; padding:10px; margin-top:10px;">
+                    <label for="execName">Was the deceased VAT registered :</label>
+                    <input type="radio" id="Yes" name="busIn" value="Yes" >
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="No" name="busIn" value="No" >
+                    <label for="No">No</label><br>
+    
+                    <label for="execId">Name of Auditor:</label>
+                    <input type="text" id="execId" name="execId">
+
+                    <label for="conde">Contact Details</label>
+                    <label for="execId">Telephone:</label>
+                    <input type="text" id="execId" name="execId">
+                    <label for="execFile">E-mail:</label>
+                    <input type="text" id="execFile" name="execFile"><br><br>
+                </div>
+
+                <label for="add">Additional Information/ Investments/Assets not Listed? </label>
+                <input type="text" name="add">
+
+                <input type="submit" value="Submit">
+            </Form>
 
 
         
