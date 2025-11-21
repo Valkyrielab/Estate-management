@@ -3,6 +3,7 @@
     <head>
         <title> Home page:</title>
         <link rel="stylesheet" href="home.css">
+
     </head>
     <body>
         <header>
@@ -21,9 +22,91 @@
             <button type="tab"><a href="children.html">Children's Details</a></button>
             <button type="tab"><a href="legal.html">Legal Information</a></button>
 
+            <h2>Client Datails</h2>
+
         </main>
-        <form class="client">
+        <form class="ref">
+            <label for="ref">REFERRER:</label>
+            <input type="text" name="ref">
+            <label for="will">COPY OF WILL TO REFERRER? </label>
+            <input type="radio" id="Yes" name="ref" value="Yes" >
+            <label for="yes">Yes</label>
+            <input type="radio" id="No" name="ref" value="No" >
+            <label for="No">No</label>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <form class="detail"> 
+            <label for="client"><h3>Client Datails</h3></label>
+            <label for="title">Title: </label>
+            <select name="title">
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="ms">Ms.</option>
+                <option value="mx">Mx.</option>
+                <option value="dr">Dr.</option>
+                <option value="prof">Prof.</option>
+                <option value="rev">Rev.</option>
+                <option value="hon">Hon.</option>
+            </select>
+            <Label class="name">Full Name:</Label>
+                <input type="text" name="name"><br>
+            <Label class="surname">Surame:</Label>
+                <input type="text" name="surname">
+            <Label class="maidenname">Maiden Name:</Label>
+                <input type="text" name="maidenname"><br>
+            <Label class="Id">ID Number:</Label>
+                <input type="number" name="id">
+            <Label class="DOB">Date of Birth</Label>
+                <input type="Date" name="DOB"><br>
+            <Label class="address">Residentail Address</Label>
+                <input type="text" name="address">
+            <label for="post">Postal Code</label>
+                <input type="number" name="post">
+            <label for="postala">Postal Address:</label>
+                <input type="text" name="postala">
+            <input type="submit" value="Submit">
+        </form>
+
+        <form class="Business">
+            <label for="bus"> Business </label>
+             <Label class="busname">Business Name:</Label>
+                <input type="text" name="busname">
+            <Label class="busr">Registration No.:</Label>
+                <input type="number" name="busr"><br>
+            <Label class="busa">Business Address:</Label>
+                <input type="text" name="busa">br
+            <Label class="postb">Postal Code:</Label>
+                <input type="number" name="postb">
+            <label for="vat">VAT No:</label>
+                <input type="number" name="vat">
+            <input type="submit" value="Submit">
+        </form>
+
+        <form class="bill&cantact">
+            <label for="billing&contact"> Billing & Contact</label>
+            <label for="bill">Entity to be Billed:*</label>
+                <input type="text" name="bill">
+            <label for="h">Phone Number(H):</label>
+                <input type="number" name="H">
+            <label for="w">Phone Number(H):</label>
+                <input type="number" name="w">
+            <label for="cell">Cell/Mobile Number:</label>
+                <input type="number" name="cell">
+            <label for="correspondens">Address to which correspondence is to be sent:*</label><br>
+                <input type="checkbox" name="corp">
+                <label for="corp">Postal</label><br>
+                <input type="checkbox" name="corr">
+                <label for="corr">Residentail</label><br>
+                <input type="checkbox" name="corb">
+                <label for="corb">Business</label><br>
+            <label for="fax">Fax Number</label>
+                <input type="number" name="fax">
+            <label for="email">E-mail</label>
+                <input type="text" name="email">
 
         </form>
+
     </body>
 </html>
