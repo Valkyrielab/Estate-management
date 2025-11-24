@@ -26,21 +26,22 @@
             <Button type="tab"><a href="poa.html">Power of Attorny</a></Button>
             <Button type="tab"><a href="legalp.html">Completed by :</a></Button>
         </main>
-        <p><h2>Personal Information</h2></p>
-        <Form>
-            <label for="fn">Full Name</label>
-                <input type="text" name="fn">
-            <label for="DOB">Date of Birth</label>
-                <input type="date" name="DOB">
-            <label for="id"> ID no</label>
-                <input type=" number" name="id"><br>
-            <label for="email">Email:</label>
-                <input type="text" name="email">
-            <label for="cont num">Contact Number: </label>
-                <input type="text" name="cont num">
-            <label for="address"> Address: </label>
-                <input type="text" name="address">
-            <input type="submit" value="Submit">
-        </Form>
+        <h1>Is It To Be General/Special Power OF Attorney</h1>
+
+        <form class="poa">
+            <label for="general">Is It To Be General Power OF Attorney</label>
+                <input type="radio" name="choice" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="choice" value="no">
+                <label for="no">No</label>
+            <label for="general">Is It To Be Special Power OF Attorney</label>
+                <input type="radio" name="choice" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="choice" value="no">
+                <label for="no">No</label>
+            <label for="what">Is Special for what Purpose</label>
+            <input type="text" name="what">
+            
+        </form>
     </body>
 </html>
