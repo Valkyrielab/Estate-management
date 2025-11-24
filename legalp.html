@@ -26,21 +26,24 @@
             <Button type="tab"><a href="poa.html">Power of Attorny</a></Button>
             <Button type="tab"><a href="legalp.html">Completed by :</a></Button>
         </main>
-        <h1>Is It To Be General/Special Power OF Attorney</h1>
+        <h1>Complete By </h1>
 
-        <form class="poa">
-            <label for="general">Is It To Be General Power OF Attorney</label>
-                <input type="radio" name="choice" value="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" name="choice" value="no">
-                <label for="no">No</label>
-            <label for="general">Is It To Be Special Power OF Attorney</label>
-                <input type="radio" name="choice" value="yes">
-                <label for="yes">Yes</label><br>
-                <input type="radio" name="choice" value="no">
-                <label for="no">No</label>
-            <label for="what">Is Special for what Purpose</label>
-                <input type="text" name="what">
+        <form class="legalp">
+            <label for="full">Full Name</label>
+            <input type="text" name="full">
+            <label for="relationship"> Relationship to POA Grantor</label>
+            <input type="text" name="full">
+            <label for="sig-canvas">Sign below:</label>
+            <canvas id="sig-canvas" class="sig-box" width="500" height="200" aria-label="Signature area"></canvas>
+            <div class="sig-actions">
+                <button type="button" id="clear-btn">Clear</button>
+                <button type="button" id="undo-btn">Undo</button>
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+            <label for="date">Date</label>
+            <input type="date" name="date">
+
+           
             <input type="submit" value="Submit">
         </form>
     </body>
