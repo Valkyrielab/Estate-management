@@ -1,0 +1,8 @@
+
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.45; padding: 24px; }
+    .field { max-width: 520px; margin-bottom: 16px; }
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    select, input[type="text"] {
+      width: 100%; padding: 10px 12px; border: 1px solid #bbb; border-radius: 6px; font-size: 14px;
+    }
+    .hint { color: #666; font-size: 12px; margin-top: 4px; }
