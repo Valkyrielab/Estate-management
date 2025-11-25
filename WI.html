@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home page:</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header>
+            <img src="image/logo.png" alt="Legacy Fiduciary Services">
+            <h1>Legacy</h1>
+            <hr>
+            <p>Fiduciary Services</p>
+            <br>
+            <button><a href="home.html">Home Page</a></button>
+            <button><a href="EQ.html">Estate Questionnaire</a></button>
+            <button><a href="clientIsnfo.html">Client Details</a></button>
+            <button><a href="POAID.html">Power Of Attorney Information Document</a></button>
+            <button><a href="PED.html"> Personal Document</a></button>
+            <button><a href="WID.html">Will Information Document</a></button>
+        </header>
+        <h1>WILL Information: </h1>
+        <main class="top">
+            <button type="tab"><a href="Pi.html">Personal Information</a> </button>
+            <button type="tab"><a href="WI.html"></a> </button>
+        </main>
+        <form class="bequest">
+            <h2>Bequest</h2>
+            <label for="cash/assers">Cash or Assets: </label>
+                <input type="radio" name="cash">
+                <label for="cash">Cash</label>
+                <input type="radio" name="assets">
+                <label for="assets">Assests</label>
+            <label for="whom">To Whom</label><br>
+                <input type="text">
+            <label for="DOB">Date of Birth (DOB):</label>
+                <input type="Date">
+            <label for="id">ID No:</label>
+                <input type="number">
+            <label for="relationship">Relationship:</label>
+                <select id="relationship" name="relationship">
+                    <option value="mother">Mother</option>
+                    <option value="father">Father</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="friendship">Friend</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="professional">Professional</option>
+                    <option value="acquaintance">Acquaintance</option>
+                    <option value="mentor">Mentor/Mentee</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="community">Community/Group</option>
+                </select><br>
+            <label for="condition">Condition:</label>
+                <input type="text"><br>
+            <label for="alternate">Alternate if Pre-deceased:</label>
+                <input type="text"> 
+        </form>
+        <form class="Heir/s of Estate">
+            <h2>Heir/s of Estate</h2>
+            <label for="f">Full Name:</label>
+                <input type="text">
+            <label for="DOB">Date of Birth (DOB):</label>
+                <input type="Date">
+            <label for="id">ID No:</label>
+                <input type="number">
+            <label for="relationship">Relationship:</label>
+                <select id="relationship" name="relationship">
+                    <option value="mother">Mother</option>
+                    <option value="father">Father</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="friendship">Friend</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="professional">Professional</option>
+                    <option value="acquaintance">Acquaintance</option>
+                    <option value="mentor">Mentor/Mentee</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="community">Community/Group</option>
+                </select><br>
+            <label for="%of estate">Percentage of Estate:</label>
+                <input type="text"><br>
+            <label for="conditions">Conditions:</label>
+                <input type="text">
+        </form>
+        <form class="Alternate">
+            <h2>Alternate Heir/s If Pre-deceased: </h2>
+            <label for="n">Full Name</label>
+                <input type="text">
+             <label for="DOB">Date of Birth (DOB):</label>
+                <input type="Date">
+            <label for="id">ID No:</label>
+                <input type="number">
+            <label for="relationship">Relationship:</label>
+                <select id="relationship" name="relationship">
+                    <option value="mother">Mother</option>
+                    <option value="father">Father</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="friendship">Friend</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="professional">Professional</option>
+                    <option value="acquaintance">Acquaintance</option>
+                    <option value="mentor">Mentor/Mentee</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="community">Community/Group</option>
+                </select><br>
+            <label for="Percentag">Percentag: </label>
+                <input type="number">
+            <label for="condition">Condition: </label>
+                <input type="text">
+        </form>
+        <form class="should">
+            <h2>Heir/s Should All The Above Pre-Deceased</h2>
+            <label for="FM">Full Name</label>
+                <input type="text"><br>
+             <label for="DOB">Date of Birth (DOB):</label>
+                <input type="Date">
+            <label for="id">ID No:</label>
+                <input type="number">
+            <label for="relationship">Relationship:</label>
+                <select id="relationship" name="relationship">
+                    <option value="mother">Mother</option>
+                    <option value="father">Father</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="friendship">Friend</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="professional">Professional</option>
+                    <option value="acquaintance">Acquaintance</option>
+                    <option value="mentor">Mentor/Mentee</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="community">Community/Group</option>
+                </select><br>
+            <label for="Percentag">Percentag: </label>
+                <input type="number">
+        </form>
+        <form class="Executor">
+            <h2>Exector/s To Wind Up Estate</h2>
+            <label for="fm">Full Name</label>
+                <input type="text">
+            <label for="DOB">Date of Birth (DOB):</label>
+                <input type="date"><br>
+            <label for="id">ID No:</label>
+                <input type="number">
+            <label for="sign">Relationship to Signatory:</label>
+                <select id="relationship" name="relationship">
+                    <option value="mother">Mother</option>
+                    <option value="father">Father</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="friendship">Friend</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="professional">Professional</option>
+                    <option value="acquaintance">Acquaintance</option>
+                    <option value="mentor">Mentor/Mentee</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="community">Community/Group</option>
+                </select><br>
+                <br>
+            <label for="executor">Alternate Executor:</label>
+                <input type="text">
+        </form>
+        <form class="guardian(s)">
+            <label for="fulln">Full Name</label>
+                <input type="text">
+            <label for="DOB">Date of Birth (DOB):</label>
+                <input type="date"><br>
+            <label for="id">ID No:</label>
+                <input type="number">
+            <label for="sign">Relationship to Signatory:</label>
+                <select id="relationship" name="relationship">
+                    <option value="mother">Mother</option>
+                    <option value="father">Father</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="friendship">Friend</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="professional">Professional</option>
+                    <option value="acquaintance">Acquaintance</option>
+                    <option value="mentor">Mentor/Mentee</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="community">Community/Group</option>
+                </select><br>
+                <br>
+            <label for="executor">Alternate Guardian:</label>
+                <input type="text">
+        </form>
+        <form class="trust">
+             <label for="fulln">Full Name</label>
+                <input type="text">
+            <label for="DOB">Date of Birth (DOB):</label>
+                <input type="date"><br>
+            <label for="id">ID No:</label>
+                <input type="number">
+            <label for="sign">Relationship to Signatory:</label>
+                <select id="relationship" name="relationship">
+                    <option value="mother">Mother</option>
+                    <option value="father">Father</option>
+                    <option value="sibling">Sibling</option>
+                    <option value="friendship">Friend</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="professional">Professional</option>
+                    <option value="acquaintance">Acquaintance</option>
+                    <option value="mentor">Mentor/Mentee</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="business">Business Partnership</option>
+                    <option value="community">Community/Group</option>
+                </select><br>
+                <br>
+            <label for="executor">Alternate Trustee:</label>
+                <input type="text">
+            <label for="burial">BURIAL / CREMATION / ORGAN DONATION Instructions:</label>
+                <input type="checkbox" name="burial">
+                <label for="burial">Burial</label>
+                <input type="checkbox" name="cremation">
+                <label for="cremation">Cremation</label>
+                <input type="checkbox" name="organ">
+                <label for="organ">Organ Donation</label>
+            <label for="further">Further Instructions:</label>
+                <input type="text">
+        </form>
+        <form class="sign">
+            <label for="signature">Signature:</label>
+                <input type="text" id="signature" name="signature" placeholder="Type your signature">
+            <label for="date">Date:</label>
+                <input type="date">
+        </form>
+    </body>
+</html>
