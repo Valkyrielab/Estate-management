@@ -3,3 +3,8 @@ hr{
     height: 3px;
 }
 main{background-image: url(image/logo.png);}
+
+table{
+    width: AUTO;
+    height: auto;
+}
