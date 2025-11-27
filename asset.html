@@ -27,53 +27,1517 @@
         <h1>Assets</h1>
         <form class="Property">
             <h2>Property/ies</h2>
-            <table id="Property 1"></table>
-            <table id="Property 2"></table>
+            <table id="Property 1">
+                <tr>
+                    <thead>Property Details</thead>
+                    <thead>Personal / Residential</thead>
+                    <thead>Investment / Other</thead>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Purchase Price</th>
+                    <td>R <input type="number"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Purchase Date</th>
+                    <td><input type="Date"></td>
+                    <td><input type="Date"></td>
+                </tr>
+                <tr>
+                    <th>Deed in Name of</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Location of Title Deed</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount of Mortgage</th>
+                    <td>R <input type="number"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Type of Mortgage</th>
+                    <td>
+                        <select id="mortgage" name="mortgage">
+                            <option value="mortgage">Choose a mortgage type:</option>
+                            <option value="fixed-rate">Fixed-Rate Mortgage</option>
+                            <option value="adjustable-rate">Adjustable-Rate Mortgage (ARM)</option>
+                            <option value="interest-only">Interest-Only Mortgage</option>
+                            <option value="balloon">Balloon Mortgage</option>
+                            <option value="fha">FHA Loan</option>
+                            <option value="va">VA Loan</option>
+                            <option value="usda">USDA Loan</option>
+                            <option value="reverse">Reverse Mortgage</option>
+                            <option value="jumbo">Jumbo Mortgage</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="mortgage" name="mortgage">
+                            <option value="mortgage">Choose a mortgage type:</option>
+                            <option value="fixed-rate">Fixed-Rate Mortgage</option>
+                            <option value="adjustable-rate">Adjustable-Rate Mortgage (ARM)</option>
+                            <option value="interest-only">Interest-Only Mortgage</option>
+                            <option value="balloon">Balloon Mortgage</option>
+                            <option value="fha">FHA Loan</option>
+                            <option value="va">VA Loan</option>
+                            <option value="usda">USDA Loan</option>
+                            <option value="reverse">Reverse Mortgage</option>
+                            <option value="jumbo">Jumbo Mortgage</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Name of Mortgagor (bank)</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Improvements</th>
+                    <td>
+                        <select id="improvements" name="improvements">
+                            <option value="kitchen">Kitchen Improvements</option>
+                            <option value="room">Room Improvements</option>
+                            <option value="bathroom">Bathroom Improvements</option>
+                            <option value="car">Car Improvements</option>
+                            <option value="yard">Yard Improvements</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="improvements" name="improvements">
+                            <option value="kitchen">Kitchen Improvements</option>
+                            <option value="room">Room Improvements</option>
+                            <option value="bathroom">Bathroom Improvements</option>
+                            <option value="yard">Yard Improvements</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Date, Description & cost of Improvements</th>
+                    <td>
+                        <tr>
+                            <td><label for="date">Date</label></td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="description">Description</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="cost">Cost</label></td>
+                            <td> R <input type="number"></td>
+                        </tr>
+                    </td>
+                    <td>
+                        <tr>
+                            <td><label for="date">Date</label></td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="description">Description</label></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="cost">Cost</label></td>
+                            <td> R <input type="number"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
         </form>
         <form class="Motor Vehicles">
             <h2>Motor Vehicles</h2>
-            <table id="motor"></table>
+            <table id="motor">
+                <tr>
+                    <thead>Motor Vehicle Details</thead>
+                </tr>
+                <tr>
+                    <th>Make</th>
+                    <td>
+                        <label for="car-model">Choose a car model:</label>
+                        <select id="car-model" name="car-model">
+                            <optgroup label="Toyota">
+                                <option value="corolla">Corolla</option>
+                                <option value="camry">Camry</option>
+                                <option value="rav4">RAV4</option>
+                                <option value="hilux">Hilux</option>
+                            </optgroup>
+                            <optgroup label="BMW">
+                                <option value="3-series">3 Series</option>
+                                <option value="5-series">5 Series</option>
+                                <option value="x5">X5</option>
+                                <option value="i8">i8</option>
+                            </optgroup>
+                            <optgroup label="Ford">
+                                <option value="focus">Focus</option>
+                                <option value="mustang">Mustang</option>
+                                <option value="f-150">F-150</option>
+                                <option value="explorer">Explorer</option>
+                            </optgroup>
+                            <optgroup label="Mercedes-Benz">
+                                <option value="c-class">C-Class</option>
+                                <option value="e-class">E-Class</option>
+                                <option value="s-class">S-Class</option>
+                                <option value="gle">GLE</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="car-model" name="car-model">
+                            <optgroup label="Toyota">
+                                <option value="corolla">Corolla</option>
+                                <option value="camry">Camry</option>
+                                <option value="rav4">RAV4</option>
+                                <option value="hilux">Hilux</option>
+                            </optgroup>
+                            <optgroup label="BMW">
+                                <option value="3-series">3 Series</option>
+                                <option value="5-series">5 Series</option>
+                                <option value="x5">X5</option>
+                                <option value="i8">i8</option>
+                            </optgroup>
+                            <optgroup label="Ford">
+                                <option value="focus">Focus</option>
+                                <option value="mustang">Mustang</option>
+                                <option value="f-150">F-150</option>
+                                <option value="explorer">Explorer</option>
+                            </optgroup>
+                            <optgroup label="Mercedes-Benz">
+                                <option value="c-class">C-Class</option>
+                                <option value="e-class">E-Class</option>
+                                <option value="s-class">S-Class</option>
+                                <option value="gle">GLE</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Year</th>
+                    <td><input type="number" id="year" name="year" min="1900" max="2100" step="1" placeholder="YYYY"></td>
+                    <td><input type="number" id="year" name="year" min="1900" max="2100" step="1" placeholder="YYYY"></td>
+                </tr>
+                <tr>
+                    <th>Registration Number</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>VIN Number</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Engine Number</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Registration in Name of</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Purchase Price</th>
+                    <td>R <input type="number"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Financed?</th>
+                    <td><input type="radio"  name="yes"><label for="yes">yes</label>
+                    <input type="radio" name="no"><label for="no">No</label></td>
+                    <td><input type="radio"  name="yes"><label for="yes">yes</label>
+                    <input type="radio" name="no"><label for="no">No</label></td>
+                </tr>
+                <tr>
+                    <th>Financier</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Account Number</th>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+            </table>
         </form>
         <form class="other">
             <h2>Other Assets of Value</h2>
-            <table id="personal"></table>
-            <table id="Miscellaneous"></table>
+            <table id="personal">
+                <tr>
+                    <thead>Other Assets of Value (Personal)</thead>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <th>Location</th>
+                    <th>Ownership</th>
+                    <th>Estimated Value</th>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                
+            </table>
+            <table id="Miscellaneous">
+                <tr>
+                    <thead>Other Assets of Value (Miscellaneous)</thead>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <th>Location</th>
+                    <th>Ownership</th>
+                    <th>Estimated Value</th>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                </tr>
+            </table>
         </form>
         <form class="Owed to">
             <h2>Debts Owed to Me/My Estate</h2>
-            <table id="debtor"></table>
+            <table id="debtor">
+                <tr>
+                    <thead>Debts owen to me/my estate</thead>
+                </tr>
+                <tr>
+                    <th>Debtor’s Name</th>
+                    <th>Address</th>
+                    <th>Amount</th>
+                    <th>Date paid in full</th>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+            </table>
         </form>
         <form class="Owed by">
             <h2>Debts Owed By Me/My Estate</h2>
-            <table id="creidtor"></table>
+            <table id="creidtor">
+                <tr>
+                    <thead>To whom</thead>
+                    <thead>Address</thead>
+                    <thead>Reason</thead>
+                    <thead>Amount</thead>
+                    <thead>Date paid in full</thead>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td>R <input type="number"></td>
+                    <td><input type="date"></td>
+                </tr>
+            </table>
         </form>
         <form class="policies">
             <h2>Insurance & Retirement Policies</h2>
-            <table id="Insurance 1"></table>
-            <table id="Insurance 2"></table>
-            <table id="Insurance 3"></table>
-            <table id="Insurance 4"></table>
-            <table id="Insurance 5"></table>
-            <table id="Insurance 6"></table>
-            <table id="Insurance 7"></table>
-            <table id="Insurance 8"></table>
+            <table id="Insurance 1">
+                <tr>
+                    <thead>Policy Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker or Company Details</th>
+                    <td>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td><input type="text"></td>
+                    <th>Date of Commencement:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Policy Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount Covered</th>
+                    <td>R <input type="number"></td>
+                    <th>Monthly Premium:</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>   </th>
+                    <th>Life: </th>
+                    <td><input type="text"></td>
+                    <th>Dread Disease:</th>
+                    <td><input type="text"></td>
+                    <th>Disability:</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td>
+                        <tr>
+                            <th>1.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>3.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+            <table id="Insurance 2">
+                <tr>
+                    <thead>Policy Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker or Company Details</th>
+                    <td>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td><input type="text"></td>
+                    <th>Date of Commencement:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Policy Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount Covered</th>
+                    <td>R <input type="number"></td>
+                    <th>Monthly Premium:</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>   </th>
+                    <th>Life: </th>
+                    <td><input type="text"></td>
+                    <th>Dread Disease:</th>
+                    <td><input type="text"></td>
+                    <th>Disability:</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td>
+                        <tr>
+                            <th>1.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>3.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+            <table id="Insurance 3">
+                <tr>
+                    <thead>Policy Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker or Company Details</th>
+                    <td>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td><input type="text"></td>
+                    <th>Date of Commencement:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Policy Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount Covered</th>
+                    <td>R <input type="number"></td>
+                    <th>Monthly Premium:</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>   </th>
+                    <th>Life: </th>
+                    <td><input type="text"></td>
+                    <th>Dread Disease:</th>
+                    <td><input type="text"></td>
+                    <th>Disability:</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td>
+                        <tr>
+                            <th>1.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>3.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+            <table id="Insurance 4">
+                <tr>
+                    <thead>Policy Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker or Company Details</th>
+                    <td>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td><input type="text"></td>
+                    <th>Date of Commencement:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Policy Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount Covered</th>
+                    <td>R <input type="number"></td>
+                    <th>Monthly Premium:</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>   </th>
+                    <th>Life: </th>
+                    <td><input type="text"></td>
+                    <th>Dread Disease:</th>
+                    <td><input type="text"></td>
+                    <th>Disability:</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td>
+                        <tr>
+                            <th>1.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>3.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+            <table id="Insurance 5">
+                <tr>
+                    <thead>Policy Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker or Company Details</th>
+                    <td>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td><input type="text"></td>
+                    <th>Date of Commencement:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Policy Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount Covered</th>
+                    <td>R <input type="number"></td>
+                    <th>Monthly Premium:</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>   </th>
+                    <th>Life: </th>
+                    <td><input type="text"></td>
+                    <th>Dread Disease:</th>
+                    <td><input type="text"></td>
+                    <th>Disability:</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td>
+                        <tr>
+                            <th>1.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>3.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+            <table id="Insurance 6">
+                <tr>
+                    <thead>Policy Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker or Company Details</th>
+                    <td>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td><input type="text"></td>
+                    <th>Date of Commencement:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Policy Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount Covered</th>
+                    <td>R <input type="number"></td>
+                    <th>Monthly Premium:</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>   </th>
+                    <th>Life: </th>
+                    <td><input type="text"></td>
+                    <th>Dread Disease:</th>
+                    <td><input type="text"></td>
+                    <th>Disability:</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td>
+                        <tr>
+                            <th>1.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>3.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+            <table id="Insurance 7">
+                <tr>
+                    <thead>Policy Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker or Company Details</th>
+                    <td>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td><input type="text"></td>
+                    <th>Date of Commencement:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Policy Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount Covered</th>
+                    <td>R <input type="number"></td>
+                    <th>Monthly Premium:</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>   </th>
+                    <th>Life: </th>
+                    <td><input type="text"></td>
+                    <th>Dread Disease:</th>
+                    <td><input type="text"></td>
+                    <th>Disability:</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td>
+                        <tr>
+                            <th>1.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>3.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+            <table id="Insurance 8">
+                <tr>
+                    <thead>Policy Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker or Company Details</th>
+                    <td>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td><input type="text"></td>
+                    <th>Date of Commencement:</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Policy Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount Covered</th>
+                    <td>R <input type="number"></td>
+                    <th>Monthly Premium:</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>   </th>
+                    <th>Life: </th>
+                    <td><input type="text"></td>
+                    <th>Dread Disease:</th>
+                    <td><input type="text"></td>
+                    <th>Disability:</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td>
+                        <tr>
+                            <th>1.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>3.</th>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
         </form>
 
         <form class="Pension">
             <h2>Pension Information</h2>
-            <table class="Details"></table>
-            <table class="Retirement 1"></table>
-            <table class="Retirement 2"></table>
+            <table class="Details">
+                <tr>
+                    <th>Pension Details</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <th>Pension Type</th>
+                    <td>
+                        <select id="pension-types" name="pension-types">
+                            <option value="state">State Pension</option>
+                            <option value="occupational-db">Occupational Pension - Defined Benefit</option>
+                            <option value="occupational-dc">Occupational Pension - Defined Contribution</option>
+                            <option value="personal">Personal Pension</option>
+                            <option value="stakeholder">Stakeholder Pension</option>
+                            <option value="group-personal">Group Personal Pension</option>
+                            <option value="hybrid">Hybrid or Cash Balance Plan</option>
+                            <option value="international">Overseas or International Pension</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pension Number</th>
+                    <td><input type="numbers"></td>
+                </tr>
+                <tr>
+                    <th>Amount</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Date of Commencement</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td><input type="text"></td>
+                </tr>
+
+            </table>
+            <table class="Retirement 1">
+                <tr>
+                    <thead>Retirement Annuity Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Street Address</th>
+                    <td> <label for="number"> Number: </label> <input type="number"name="number"><label for="sname">Street Name:</label> <input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Contact Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td>
+                        <label for="ra-policy-types">Choose a Retirement Annuity Policy Type:</label>
+                        <select id="ra-policy-types" name="ra-policy-types">
+                            <option value="traditional">Traditional Retirement Annuity</option>
+                            <option value="unit-linked">Unit-Linked Retirement Annuity</option>
+                            <option value="guaranteed">Guaranteed Annuity Policy</option>
+                            <option value="living-annuity">Living Annuity (Post-Retirement)</option>
+                            <option value="with-profit">With-Profit Annuity</option>
+                            <option value="inflation-linked">Inflation-Linked Annuity</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>policy Number:</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location </th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Date of Commencement</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker Details</th>
+                    <td>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Cell:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+
+            </table>
+            <table class="Retirement 2">
+                <tr>
+                    <thead>Retirement Annuity Details</thead>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Street Address</th>
+                    <td> <label for="number"> Number: </label> <input type="number"name="number"><label for="sname">Street Name:</label> <input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Contact Number</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Type</th>
+                    <td>
+                        <label for="ra-policy-types">Choose a Retirement Annuity Policy Type:</label>
+                        <select id="ra-policy-types" name="ra-policy-types">
+                            <option value="traditional">Traditional Retirement Annuity</option>
+                            <option value="unit-linked">Unit-Linked Retirement Annuity</option>
+                            <option value="guaranteed">Guaranteed Annuity Policy</option>
+                            <option value="living-annuity">Living Annuity (Post-Retirement)</option>
+                            <option value="with-profit">With-Profit Annuity</option>
+                            <option value="inflation-linked">Inflation-Linked Annuity</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>policy Number:</th>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Policy Location </th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Amount</th>
+                    <td>R <input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Date of Commencement</th>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Beneficiaries</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Agent/Broker Details</th>
+                    <td>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Tel:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Cell:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </td>
+                </tr>
+            </table>
         </form>
 
         <form class="Banking">
             <h2>Banking Details</h2>
-            <table id="accounts"></table>
+            <table id="accounts">
+                <tr>
+                    <Thead>Bank Acounts</Thead>
+                    <thead>1</thead>
+                    <thead>2</thead>
+                    <thead>3</thead>
+                    <thead>4</thead>
+                </tr>
+                <tr>
+                    <th>Account Name</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Bank</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Branch</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Account Number</th>
+                    <td><input type="number"></td>
+                    <td><input type="Number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td>
+                        <label for="bank-account-types">Choose a Bank Account Type:</label>
+                        <select id="bank-account-types" name="bank-account-types">
+                            <option value="savings">Savings Account</option>
+                            <option value="checking">Checking / Current Account</option>
+                            <option value="fixed-deposit">Fixed Deposit Account</option>
+                            <option value="money-market">Money Market Account</option>
+                            <option value="certificate-of-deposit">Certificate of Deposit (CD)</option>
+                            <option value="joint">Joint Account</option>
+                            <option value="student">Student Account</option>
+                            <option value="business">Business Account</option>
+                            <option value="salary">Salary Account</option>
+                            <option value="nri">NRI Account (Non-Resident)</option>
+                            <option value="trust">Trust Account</option>
+                            <option value="escrow">Escrow Account</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="bank-account-types">Choose a Bank Account Type:</label>
+                        <select id="bank-account-types" name="bank-account-types">
+                            <option value="savings">Savings Account</option>
+                            <option value="checking">Checking / Current Account</option>
+                            <option value="fixed-deposit">Fixed Deposit Account</option>
+                            <option value="money-market">Money Market Account</option>
+                            <option value="certificate-of-deposit">Certificate of Deposit (CD)</option>
+                            <option value="joint">Joint Account</option>
+                            <option value="student">Student Account</option>
+                            <option value="business">Business Account</option>
+                            <option value="salary">Salary Account</option>
+                            <option value="nri">NRI Account (Non-Resident)</option>
+                            <option value="trust">Trust Account</option>
+                            <option value="escrow">Escrow Account</option>
+                        </select>
+                    </td>  
+                    <td>
+                        <label for="bank-account-types">Choose a Bank Account Type:</label>
+                        <select id="bank-account-types" name="bank-account-types">
+                            <option value="savings">Savings Account</option>
+                            <option value="checking">Checking / Current Account</option>
+                            <option value="fixed-deposit">Fixed Deposit Account</option>
+                            <option value="money-market">Money Market Account</option>
+                            <option value="certificate-of-deposit">Certificate of Deposit (CD)</option>
+                            <option value="joint">Joint Account</option>
+                            <option value="student">Student Account</option>
+                            <option value="business">Business Account</option>
+                            <option value="salary">Salary Account</option>
+                            <option value="nri">NRI Account (Non-Resident)</option>
+                            <option value="trust">Trust Account</option>
+                            <option value="escrow">Escrow Account</option>
+                        </select>
+                    </td>  
+                    <td>
+                        <label for="bank-account-types">Choose a Bank Account Type:</label>
+                        <select id="bank-account-types" name="bank-account-types">
+                            <option value="savings">Savings Account</option>
+                            <option value="checking">Checking / Current Account</option>
+                            <option value="fixed-deposit">Fixed Deposit Account</option>
+                            <option value="money-market">Money Market Account</option>
+                            <option value="certificate-of-deposit">Certificate of Deposit (CD)</option>
+                            <option value="joint">Joint Account</option>
+                            <option value="student">Student Account</option>
+                            <option value="business">Business Account</option>
+                            <option value="salary">Salary Account</option>
+                            <option value="nri">NRI Account (Non-Resident)</option>
+                            <option value="trust">Trust Account</option>
+                            <option value="escrow">Escrow Account</option>
+                        </select>
+                    </td>                 
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Contact Number</th>
+                    <td><input type="number"></td>
+                    <td><input type="Number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+            </table>
         </form>
         
         <form class="Shares">
             <h2>Shares / Portfolios</h2>
-            <table id="shares"></table>
+            <table id="shares">
+                <tr>
+                    <thead>Shares</thead>
+                    <thead>1</thead>
+                    <thead>2</thead>
+                    <thead>3</thead>
+                    <thead>4</thead>
+                    <thead>5</thead>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Date Purchased</th>
+                    <td><input type="date"></td>
+                    <td><input type="date"></td>
+                    <td><input type="date"></td>
+                    <td><input type="date"></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th>Certificate Number</th>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Certificate Location</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Unit Price (PPU)</th>
+                    <td>R<input type="number"> pu</td>
+                    <td>R<input type="number"> pu</td>
+                    <td>R<input type="number"> pu</td>
+                    <td>R<input type="number"> pu</td>
+                    <td>R<input type="number"> pu</td>
+                </tr>
+                <tr>
+                    <th>Number of Shares</th>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Amount</th>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <th>Broker Name</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Broker Address</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Borker Contact Number</th>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+            </table>
         </form>
         <form class="unit trust">
             <h2>Unit Trust Details</h2>
