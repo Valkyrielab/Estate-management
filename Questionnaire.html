@@ -6,7 +6,348 @@
 
     </head>
     <body>
+        <header><!DOCTYPE html>
+<html>
+    <head>
+        <Title>Questionnaire</Title>
+        <link rel='stylesheet' href="Q.css">
+        <link rel="stylesheet" href="home.css">
+
+    </head>
+    <body>
         <header>
+            <img src="image/logo.png" alt="Legacy Fiduciary Services">
+            <h1>Legacy</h1>
+            <hr>
+            <p>Fiduciary Services</p>
+            <button><a href="home.html">Home Page</a></button>
+            <button><a href="EQ.html">Estate Questionnaire</a></button>
+            <button><a href="clientInfo.html">Client Details</a></button>
+            <button><a href="POAID.html">Power Of Attorney Information Document</a></button>
+            <button><a href="PED.html"> Personal Document</a></button>
+            <button><a href="WID.html">Will Information Document</a></button>
+        </header>
+        <main class="top">
+            <button type="tab"><a href="Questionnaire.html">Individuals's Details</a></button>
+            <button type="tab"><a href="assets.html">Assets</a></button>
+            <button type="tab"><a href="liabilities.html">liabilities</a></button>
+            <h1>INDIVIDUAL’S DETAILS</h1>
+        </main>
+        <main class="Center">
+            <form class="individuals info." >
+                <h3>Individuals Details</h3>
+                <label for="contact person"> Contact Person: </label> 
+                    <input type="text" name="contact person">
+                <label for="cont no.">Contact Number</label>
+                    <input type="number" name="cont no."><br>
+                <label for="email1"> E-mail Address</label>
+                    <input type="text" name="email1"><br>
+                <label for="full name"> Deceased Full Name and Surname</label> 
+                    <input type="text" name="full name">
+                <br>
+                <label for="userId">Identity Number:</label>
+                    <input type="text" id="userId" name="userId">
+                <label for="nationality">Nationality</label>
+                    <input type="text" name="nationality"><br>
+                <label for="tax num">Tax Number</label>
+                    <input type="number" name="tax num">
+                <br><br>
+
+                <label for="consalt">Tax consutants and contact Details</label>
+                    <input type="text" name="consult">
+                <label for="will">is there a Will ?</label>
+                <select id="agree" name="agree">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select><br>
+                <label for="date signed">Date and place the Will was signed. </label><br>
+                <label for="ds">Date the will was signed:</label>
+                    <input type="date" id="ds" name="ds" min="1900-01-01" max="2025-12-31">
+                <label for="place">Place the Will was signed:</label>
+                    <select id="place" name="place">
+                        <option value="Select">Please select a Value</option>
+                        <option value="Office">Legacy Office</option>
+                        <option value="home">Clientes Home </option>
+                        <option value="other">Other Firm</option>
+                    </select>
+                 <select id="provinces" name="provinces">
+                    <option value="Select">Please select a provinces</option>
+                    <option value="Eastern Cape">Eastern Cape</option>
+                    <option value="Free State">Free State</option>
+                    <option value="Gauteng">Gauteng</option>
+                    <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                    <option value="Limpopo">Limpopo</option>
+                    <option value="Mpumalanga">Mpumalanga</option>
+                    <option value="Northern Cape">Other Firm</option>
+                    <option value="North West">North West</option>
+                    <option value="Western Cape">Western Cape</option>
+                </select><br>
+                <label for="Occuoation">Occupation:</label>
+                    <input type="text"><br>
+                <label for="residence "> Residence Prior to death:</label><br>
+                <label for="address">Address:</label>
+                    <input type="text"  name="address">
+                    <select id="address" name="address">
+                        <option value="Select">Please select a provinces</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                        <option value="Free State">Free State</option>
+                        <option value="Gauteng">Gauteng</option>
+                        <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="Mpumalanga">Mpumalanga</option>
+                        <option value="Northern Cape">Other Firm</option>
+                        <option value="North West">North West</option>
+                        <option value="Western Cape">Western Cape</option>
+                    </select><br>
+                <label for="salary">Approximate monthly salary: R </label>
+                    <input type="number" name="salary"><br>
+                <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31">
+                <label for="pob">Place of birth</label>
+                    <input type="location" name="pob"><br>
+                <label for="dod"> Date of death</label>
+                    <input type="date" id="dob" name="dob" min="1900-01-01" max="2025-12-31">
+                <label for="POD"> Place of death</label>
+                    <input type="location" name="poD"><br>
+                <label for="married">Marital Status at time of death:</label>
+                   <select name="marital state" id="state">
+                    <option value="Married">Married</option>
+                    <option value="devorce">Devoriced</option>
+                    <option value="Singel">Singel</option>
+                   </select>
+                <label for="married">Place where married:</label>
+                    <input type="location" name="married"><br>
+
+                <label for="married">Married in or out of community of property:</label><br>
+                    <input type="radio" id="yes" name="inside" value="Yes">
+                <label for="inside">inside</label>
+                    <input type="radio" id="no" name="outside" value="No">
+                <label for="outside">Outside</label>
+                <br>
+                <label for="spouse" id="heirs">Full Names of Surviving Spouse and Occupation:</label><br>
+                    <label for="spouse">Spouses full Name</label>
+                    <input type="text" name="spouse">
+                    <label for="spouse">Spouses Occupation</label>
+                    <input type="text" name="spouse"><br>
+                <label for="spouse">Address and telephone number of surviving spouse:</label><br>
+                    <label for="spouse">Spouses telephone Number</label>
+                    <input type="text" name="spouse">
+                    <label for="spouse">Spouses Address: </label>
+                    <input type="text" name="spouse"><br>
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <form class="Hiers">
+                <label for="Hiers"><h3>Heirs as per Will:</h3>
+                <label for="item 1">Full Name</label>
+                <input type="text" name="item[1]" placeholder=" ">
+                <label for="item 2">Identity Number:</label>
+                <input type="text" name="item[2]" placeholder=" "><br>
+                <label for="item 3">Address:</label>
+                <input type="text" name="item[3]" placeholder=" "><br>
+                <label for="item 4">Email Address:</label>
+                <input type="text" name="item[4]" placeholder=" ">
+                <label for="item 5">Contact Number:</label>
+                <input type="text" name="item[5]" placeholder=" "><br>
+                <br><br>
+                <button type="button" onclick="addField()">Add More</button>
+                </label>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <form class="Executors">
+                <label for="Executors"><h3>Nominated Executor(s) as per Will:</h3></label>
+                <label for="item 1">Full Name</label>
+                <input type="text" name="item[1]" placeholder=" ">
+                <label for="item 2">Identity Number:</label>
+                <input type="text" name="item[2]" placeholder=" "><br>
+                <label for="item 3">Address of nominate Executor:</label>
+                <input type="text" name="item[3]" placeholder=" "><br>
+                <label for="item 4">Email Address:</label>
+                <input type="text" name="item[4]" placeholder=" ">
+                <label for="item 5">Contact Number:</label>
+                <input type="text" name="item[5]" placeholder=" "><br>
+                <br><br>
+                <button type="button" onclick="addField()">Add More</button>
+                
+                <input type="submit" value="Submit">
+            </form>   
+                <form>
+                    <Table>
+                        <tr>
+                            <td><label for="deceased">Name of predeceased spouse, if any;</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Name of predeceased spouse, if any;</label></td>
+                            <td><input type="Date" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Master’s Reference and office at which it was reported; OR</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Name of previous spouse;</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Date of divorce;</label></td>
+                            <td><input type="date" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Copy of divorce order;</label></td>
+                            <td>  <input type="file" id="file1" name="executorFile[]" accept=".pdf,.jpg,.png,.doc,.docx">  </td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Copy of divorce order and settlement agreement;</label></td>
+                            <td> <input type="file" id="file1" name="executorFile[]" accept=".pdf,.jpg,.png,.doc,.docx">   </td>
+                        </tr>
+                    </Table>
+
+                    <input type="submit" value="Submit">
+                </form>
+                <form class="children">
+                    <label for="children">Children of deceased</label>
+                    <Table>
+                       <tr>
+                         <th>Full Name:</th>
+                         <th>Age:</th>
+                         <th>Date of Birth</th>
+                         <th>Identity Number:</th>
+                         <th>Contact Number</th>
+                       </tr>
+                       <tr>
+                        <td>
+                            <input type="Text" name ="Full Name">
+                        </td>
+                        <td>
+                            <input type="number" name ="age">
+                        </td>
+                        <td>
+                            <input type="Date" name ="dob">
+                        </td>
+                        <td>
+                            <input type="number" name ="id">
+                        </td>
+                        <td>
+                            <input type="number" name ="number">
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <input type="Text" name ="Full Name">
+                        </td>
+                        <td>
+                            <input type="number" name ="age">
+                        </td>
+                        <td>
+                            <input type="Date" name ="dob">
+                        </td>
+                        <td>
+                            <input type="number" name ="id">
+                        </td>
+                        <td>
+                            <input type="number" name ="number">
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <input type="Text" name ="Full Name">
+                        </td>
+                        <td>
+                            <input type="number" name ="age">
+                        </td>
+                        <td>
+                            <input type="Date" name ="dob">
+                        </td>
+                        <td>
+                            <input type="number" name ="id">
+                        </td>
+                        <td>
+                            <input type="number" name ="number">
+                        </td>
+                       </tr>
+                       <tr>
+                        <td>
+                            <input type="Text" name ="Full Name">
+                        </td>
+                        <td>
+                            <input type="number" name ="age">
+                        </td>
+                        <td>
+                            <input type="Date" name ="dob">
+                        </td>
+                        <td>
+                            <input type="number" name ="id">
+                        </td>
+                        <td>
+                            <input type="number" name ="number">
+                        </td>
+                       </tr>
+                    </Table>
+                    <Table>
+                        <tr>
+                            <td><label for="deceased">Names of parents of the deceased, and state whether they are alive or deceased</label></td>
+                            <td><input type="radio" id="alive" name="agree" value="Alive">
+                                <label for="Alive">Alive</label>
+                                <input type="radio" id="deceased" name="agree" value="deceased">
+                                <label for="deceased">Deceased</label>
+                            </td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Name and address of person signing all the forms, especially the Death Notice</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Master’s Reference and office at which it was reported; OR</label></td>
+                            <td><label for="sign">Full name</label></td>
+                            <td><input type="text" name="deceased" placeholder=" "></td>
+                            <td><label for="sign">Address</label></td>
+                            <td><input type="location" name="deceased" placeholder=" "></td>
+
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Was the above present at the time of death?</label></td>
+                            <td><input type="radio" id="yes" name="agree" value="yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="No" name="agree" value="No">
+                                <label for="No">No</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="deceased">Is there a death certificate?</label></td>
+                            <td><input type="radio" id="yes" name="agree" value="yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="No" name="agree" value="No">
+                                <label for="No">No</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="doc">Doctor’s name and address</label></td>
+                            <td>  <label for="doc">Full Name</label>  </td>
+                            <td> <input type="text" name="doc"></td>
+                            <td>  <label for="doc">Address</label>  </td>
+                            <td> <input type="text" name="doc"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="cause">Cause of death?</label></td>
+                            <td> <input type="text" name="cause">   </td>
+                        </tr>
+                        <tr>
+                             <td><label for="fp">Funeral policies?</label></td>
+                            <td> <input type="text" name="fp">   </td>
+                        </tr>
+                    </Table>
+
+                    <input type="submit" value="Submit">
+                </form> 
+
+        </main>
+    </body>
+</html>
             <img src="image/logo.png" alt="Legacy Fiduciary Services">
             <h1>Legacy</h1>
             <hr>
