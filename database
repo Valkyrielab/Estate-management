@@ -1,0 +1,29 @@
+mysql -u root -p
+
+CREATE DATABASE my_database
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+
+CREATE USER 'app_user'@'%' IDENTIFIED BY 'StrongPassword!';
+GRANT ALL PRIVILEGES ON my_database.* TO 'app_user'@'%';
+FLUSH PRIVILEGES;
+
+
+
+CREATE DATABASE my_database
+ON PRIMARY (
+    NAME = my_database_data,
+    FILENAME = 'C:\SQLData\my_database_data.mdf',
+    SIZE = 50MB, FILEGROWTH = 10MB
+)
+LOG ON (
+    NAME = my_database_log,
+    FILENAME = 'C:\SQLData\my_database_log.ldf',
+    SIZE = 20MB, FILEGROWTH = 10MB
+);
+
+
+mysql://db_user:strong_password@localhost:3306/my_database
+
+
